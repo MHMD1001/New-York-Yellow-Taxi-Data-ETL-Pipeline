@@ -45,13 +45,13 @@ The '.env' file contains environment variables used by the Docker Compose config
 ```bash
  docker-compose build
 ```
-  This command build our extended Airflow image defined by the dockerfile
+    This command build our extended Airflow image defined by the dockerfile
 
 3. Initialize Airflow:
 ```bash
   $docker-compose up airflow-init
 ```
-  This commad to initialize the Airflow database and create the necessary tables and initial configuration
+    This commad to initialize the Airflow database and create the necessary tables and initial configuration
 
 4. Start the Docker containers for Airflow using the appropriate Docker Compose files:
 ```bash
