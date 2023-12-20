@@ -31,8 +31,8 @@ The '.env' file contains environment variables used by the Docker Compose config
 
 ### Update the .env file:
 
-GOOGLE_APPLICATION_CREDENTIALS: Path to the downloaded JSON key file.
-AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: Update the key path in the connection string.
+GOOGLE_APPLICATION_CREDENTIALS: Path to the downloaded JSON key file.  
+AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: Update the key path in the connection string.  
 Adjust the configurations in the .env file, providing the necessary details for Google Cloud, PostgreSQL, and other variables.
 
 ### Running the Data Pipeline
