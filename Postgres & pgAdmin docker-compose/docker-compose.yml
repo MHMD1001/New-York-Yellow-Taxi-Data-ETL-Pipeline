@@ -1,0 +1,49 @@
+version: "3"
+
+services:
+  pgdatabase:
+    image: postgres
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=ny_taxi
+    volumes:
+      - C:/Users/lenovo/Desktop/DataTalks/docker/ny_taxi_postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - airflow
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - "2020:80"
+    volumes:
+      - C:\Users\lenovo\Desktop\DataTalks\docker\pg-admin_data:/var/lib/pgadmin
+    networks:
+      - airflow
+
+networks:
+  airflow:
+    external:
+      name: airflow_default
+
+  # python_script:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   depends_on:
+  #     - pgdatabase
+  #   command:
+  #     [
+  #       "--user=root",
+  #       "--password=root",
+  #       "--host=pgdatabase",
+  #       "--port=5432",
+  #       "--db=ny_taxi",
+  #       "--table_name=yellow_taxi_trips",
+  #       "--url=https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz",
+  #     ]
