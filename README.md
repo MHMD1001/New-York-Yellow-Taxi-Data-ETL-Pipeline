@@ -1,6 +1,6 @@
-# Project Overview
+# New York Yellow Taxi Data ETL Pipeline (2022)
 
-## Description
+## Overview
 
 This comprehensive project automates the Extraction, Transformation, and Loading (ETL) process for the New York Yellow Taxi trip records throughout 2022. Leveraging the TLC Trip Record Data website, the pipeline orchestrates a series of tasks, including data download, ingestion into a PostgreSQL database, upload to Google Cloud Storage (GCS), and the creation of a BigQuery external table referencing the GCS stored data.  
 The project serves a dual purpose – ensuring operational efficiency with PostgreSQL and unlocking the power of BigQuery for advanced analytics. It's not just about storing data; it's about empowering data-driven decisions and insights.
