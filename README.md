@@ -39,21 +39,21 @@ Adjust the configurations in the .env file, providing the necessary details for 
 ## Running the Data Pipeline
 1. Build Docker Images:
 '''bash
-  docker-compose build
+  $docker-compose build
 This command build our extended Airflow image defined by the dockerfile
 
 2. Initialize Airflow:
 '''bash
-  docker-compose up airflow-init
+  $docker-compose up airflow-init
 This commad to initialize the Airflow database and create the necessary tables and initial configuration
 
 3. Start the Docker containers for Airflow using the appropriate Docker Compose files:
 '''bash
-  docker-compose up -d
+  $docker-compose up -d
 
 4. Start the Docker containers for PostgreSQL, and pgAdmin using the appropriate Docker Compose files:
 '''bash
-  docker-compose up -d
+  $docker-compose up -d
 
 5. Access the Airflow web interface at http://localhost:8080 and trigger the Data_ingestion_hh DAG.
 
