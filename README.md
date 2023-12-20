@@ -31,9 +31,9 @@ The '.env' file contains environment variables used by the Docker Compose config
 
 ### Update the .env file:
 
-GOOGLE_APPLICATION_CREDENTIALS: Path to the downloaded JSON key file.  
-AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: Update the key path in the connection string.  
-Adjust the configurations in the .env file, providing the necessary details for Google Cloud, PostgreSQL, and other variables.
+#### GOOGLE_APPLICATION_CREDENTIALS: Path to the downloaded JSON key file.  
+#### AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: Update the key path in the connection string.  
+#### Adjust the configurations in the .env file, providing the necessary details for Google Cloud, PostgreSQL, and other variables.
 
 ### Running the Data Pipeline
 1. Clone the repository:
@@ -45,13 +45,13 @@ Adjust the configurations in the .env file, providing the necessary details for 
 ```bash
  docker-compose build
 ```
-This command build our extended Airflow image defined by the dockerfile
+  This command build our extended Airflow image defined by the dockerfile
 
 3. Initialize Airflow:
 ```bash
   $docker-compose up airflow-init
 ```
-This commad to initialize the Airflow database and create the necessary tables and initial configuration
+  This commad to initialize the Airflow database and create the necessary tables and initial configuration
 
 4. Start the Docker containers for Airflow using the appropriate Docker Compose files:
 ```bash
