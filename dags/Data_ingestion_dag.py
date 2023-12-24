@@ -21,7 +21,7 @@ user = os.getenv('user')
 password = os.getenv('password')
 host = os.getenv('host')
 port = os.getenv('port')
-db = os.getenv('dtabase')
+db = os.getenv('database')
 
 
 
