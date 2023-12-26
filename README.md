@@ -25,8 +25,8 @@ The '.env' file contains environment variables used by the Docker Compose config
 1. Ensure you have Docker and Docker Compose installed.
 2. Create a service account on the Google Cloud Console with the following roles:  
   a. Storage Object Creator and Storage Object Viewer for Google Cloud Storage.  
-  b. BigQuery Data Editor for managing datasets and tables in BigQuery.  
-  c. Generate a JSON key file for the service account and save it securely.  
+  b. BigQuery Data Editor for managing datasets and tables in BigQuery.
+4. Generate a JSON key file for the service account and save it securely.  
 
 
 ### Update the .env file:
